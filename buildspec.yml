@@ -11,7 +11,7 @@ phases:
       - ng build --prod
   post_build:
     commands:
-      - aws s3 sync dist/ s3://github-example-s3 
+      - aws s3 sync dist/ s3://elastic-example-ns
 artifacts:
   type: zip
   base-directory: dist
